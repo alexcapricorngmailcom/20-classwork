@@ -1,0 +1,58 @@
+@import _defaults.sass
+
+.container
+    margin: 10px
+    font-family: sans-serif
+
+.user-list
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    &-item
+        width: calc( 100% / 5 )
+        padding: 5px
+
+.card
+    position: relative
+    padding: 5px
+    border: 1px solid #0068bd
+    border-radius: 10px
+    overflow: hidden
+    font-size: 0.9em
+    text-align: center
+    &-background
+        position: absolute
+        left: 0
+        top: 0
+        z-index: -1
+        background-color: #0068bd 
+        width: 100%
+        height: 115px
+    &-img
+        width: 140px
+        height: 140px
+        &-container
+            margin: 0 auto
+            margin-top: 40px
+            width: 140px
+            height: 140px
+            border-radius: 50%
+            border: 4px solid #ffffff
+            overflow: hidden
+    &-firstname, &-lastname 
+        margin-top: 30px
+        font-size: 2em
+        font-weight: bold
+    &-lastname 
+        margin-top: 0
+    &-email
+        display: block
+        margin-top: 10px
+    &-mobile
+        display: block
+        margin-top: 10px
+    &-gender
+        display: block
+        margin-top: 10px
+    &-city
+        margin-top: 10px
